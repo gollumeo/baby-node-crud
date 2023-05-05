@@ -92,7 +92,6 @@ router.get('/user', (req, res) => {
             if (content[i].email === reqemail) {
                 user = content[i];
                 console.log(`User ${content[i].username} found!`);
-                // console.log(content[i]);
             }
         }
         res.sendStatus(200);
